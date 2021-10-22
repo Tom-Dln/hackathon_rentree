@@ -1,0 +1,52 @@
+/* ----------------------------------------
+    Communs   
+---------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "menu current_music"
+        "menu others_musics"
+        "player_music player_music";
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.current_music {
+    grid-area: current_music;
+}
+
+.others_musics {
+    grid-area: others_musics;
+}
+
+.player_music {
+    grid-area: player_music;
+}
+
+
+/* ----------------------------------------
+    Brice   
+---------------------------------------- */
+
+
+/* ----------------------------------------
+    Yanis   
+---------------------------------------- */
+
+
+/* ----------------------------------------
+    Tom
+---------------------------------------- */
