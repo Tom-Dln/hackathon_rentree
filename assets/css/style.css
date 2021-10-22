@@ -2,21 +2,27 @@
     Communs   
 ---------------------------------------- */
 
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    background-color: #313131;
+    color: #ffffff;
 }
 
 .container {
     display: grid;
     grid-template-columns: 0fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "menu current_music"
-        "menu others_musics"
+        "menu current_music"
         "player_music player_music";
 }
 
@@ -36,17 +42,128 @@ body {
     grid-area: player_music;
 }
 
-
 /* ----------------------------------------
     Brice   
 ---------------------------------------- */
+.current_music {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(40, 40, 40, 1) 100%
+    );
+    padding: 25px;
+}
 
+.current_music div:first-child {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.current_music__details {
+    margin-left: 30px;
+}
+
+/* .container-1 {
+    background-color: rgb(6, 7, 7);
+    height: 100%; 
+}
+.container h1 {
+    padding: 0%;
+    color: #fdfdfd;
+    font-size: 40px;
+    margin-left: 300px;
+    margin-top: -180px;
+}
+.container-1 .album{
+    margin-left: 300px;
+    margin-top: 35px;
+    color: #fdfdfd;
+} */
+
+/* .current_music img{
+    margin-top: 80px;
+    margin-left: 50px;
+} */
 
 /* ----------------------------------------
     Yanis   
 ---------------------------------------- */
 
+body,
+.container {
+    height: 100vh;
+}
+
+nav i {
+    color: white;
+}
+
+.menu {
+    height: 80%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.player_music {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.player_title {
+    display: flex;
+}
+
+.player_button {
+    display: flex;
+    flex-direction: row;
+}
+
+.player_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.player_button div {
+    padding: 20px;
+}
+
+.player_title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.player_info img {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.player_title p:first-child {
+    color: #17abd4;
+}
 
 /* ----------------------------------------
     Tom
 ---------------------------------------- */
+
+.player_music {
+    display: flex;
+}
+
+.player_music div {
+    padding: 20px;
+}
